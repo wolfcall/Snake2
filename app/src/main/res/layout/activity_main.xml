@@ -11,9 +11,9 @@
         android:text="Snake TAP"
         android:id="@+id/textView"
         android:textSize="50dp"
+        android:layout_marginTop="71dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exit"
-        android:id="@+id/button3"
+        android:id="@+id/btnExit"
         android:layout_below="@+id/btnHighScore"
         android:layout_alignLeft="@+id/btnStart"
         android:layout_alignStart="@+id/btnStart"
