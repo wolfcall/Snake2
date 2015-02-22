@@ -1,5 +1,6 @@
 package myproject2.snake2;
 
+import android.content.Intent;
 import android.os.Debug;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -59,14 +60,14 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void loadGame(View v){
-
+        Intent inten = new Intent(this, GameActivity.class);
     }
 
     public void loadHigh(View v){
-
+        Intent inten = new Intent(this, HighScore.class);
     }
 
     public void exit(View v){
-
+        
     }
 }
