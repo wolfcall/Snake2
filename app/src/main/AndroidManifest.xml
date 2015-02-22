@@ -20,6 +20,10 @@
             android:name=".GameActivity"
             android:label="@string/title_activity_game" >
         </activity>
+        <activity
+            android:name="myproject2.snake2.HighScore"
+            android:label="HighScore">
+        </activity>
     </application>
 
 </manifest>

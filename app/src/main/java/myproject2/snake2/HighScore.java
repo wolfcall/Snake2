@@ -1,5 +1,6 @@
 package myproject2.snake2;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -40,27 +41,27 @@ import java.io.InputStream;
 /**
  * Created by Catherine on 21/02/2015.
  */
-public class HighScore extends ActionBarActivity
+public class HighScore extends Activity
 {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.highscores);
-        String rankstr = "1. ";
+        /*String rankstr = "1. ";
         String namestr = "Georges";
         String scorestr = "9999";
 
-        TextView ranktext, nametext, scoretext;
+        /*TextView ranktext, nametext, scoretext;
         ranktext = (TextView) findViewById(R.id.player1rank);
         ranktext.setText(rankstr);
         nametext = (TextView) findViewById(R.id.player1name);
         nametext.setText(namestr);
         scoretext = (TextView) findViewById(R.id.player1score);
-        scoretext.setText(scorestr);
+        scoretext.setText(scorestr);*/
     }
 
 
-    @Override
+    /*@Override
     public AssetManager getAssets() {
         return null;
     }
@@ -493,5 +494,5 @@ public class HighScore extends ActionBarActivity
     @Override
     public Context createDisplayContext(Display display) {
         return null;
-    }
+    }*/
 }
