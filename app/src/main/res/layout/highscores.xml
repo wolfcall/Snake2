@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_highscores"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="3"
+        android:columnOrderPreserved="true"
+        android:rowOrderPreserved="true">
+
+        <!--Title-->
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_marginTop="175dp"
+            android:textStyle="bold"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_marginTop="175dp"
+            android:textStyle="bold"
+            android:layout_column="1"
+            android:layout_row="0" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:id="@+id/score"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginTop="175dp"
+            android:textSize="30dp" />
+
+        <!--Players-->
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/player1rank"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="#00000000"/>
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/player1name"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="#00000000"/>
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:id="@+id/player1score"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:textSize="30dp"
+            android:background="#00000000"/>
+
+    </GridLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="-346dp"
+        android:background="#0c0c0c"/>
 
 </LinearLayout>
