@@ -36,6 +36,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 /**
  * Created by Catherine on 21/02/2015.
  */
@@ -44,10 +45,18 @@ public class HighScore extends ActionBarActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        GridLayout l1 = new GridLayout(this);
-        TextView player = new TextView(this);
-        player.setText("Name");
-        l1.addView(player);
+        setContentView(R.layout.highscores);
+        String rankstr = "1. ";
+        String namestr = "Georges";
+        String scorestr = "9999";
+
+        TextView ranktext, nametext, scoretext;
+        ranktext = (TextView) findViewById(R.id.player1rank);
+        ranktext.setText(rankstr);
+        nametext = (TextView) findViewById(R.id.player1name);
+        nametext.setText(namestr);
+        scoretext = (TextView) findViewById(R.id.player1score);
+        scoretext.setText(scorestr);
     }
 
 
