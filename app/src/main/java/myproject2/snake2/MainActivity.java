@@ -21,6 +21,7 @@ public class MainActivity extends ActionBarActivity {
 
         final Button game = (Button) findViewById(R.id.btnStart);
         final Button high = (Button) findViewById(R.id.btnHighScore);
+        final Button exit = (Button) findViewById(R.id.btnExit);
 
         game.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,13 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 loadHigh(v);
+            }
+        });
+
+        exit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                exit(v);
             }
         });
     }
@@ -61,13 +69,16 @@ public class MainActivity extends ActionBarActivity {
 
     public void loadGame(View v){
         Intent inten = new Intent(this, GameActivity.class);
+        startActivity(inten);
     }
 
     public void loadHigh(View v){
         Intent inten = new Intent(this, HighScore.class);
+        startActivity(inten);
     }
 
     public void exit(View v){
-        
+        System.runFinalization();
+        finish();
     }
 }
