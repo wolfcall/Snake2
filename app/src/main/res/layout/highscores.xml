@@ -13,31 +13,31 @@
         android:rowOrderPreserved="true">
 
         <!--Title-->
-        <EditText
+        <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/rank"
             android:text="Rank"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
-            android:layout_marginTop="175dp"
+            android:layout_marginTop="170dp"
             android:textStyle="bold"
             android:layout_column="0"
             android:layout_row="0" />
 
-        <EditText
+        <TextView
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:id="@+id/name"
             android:text="Name"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
-            android:layout_marginTop="175dp"
+            android:layout_marginTop="170dp"
             android:textStyle="bold"
             android:layout_column="1"
             android:layout_row="0" />
 
-        <EditText
+        <TextView
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:inputType="numberSigned"
@@ -48,50 +48,201 @@
             android:textStyle="bold"
             android:layout_row="0"
             android:layout_column="2"
-            android:layout_marginTop="175dp"
+            android:layout_marginTop="170dp"
             android:textSize="30dp" />
 
         <!--Players-->
-        <EditText
+        <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:id="@+id/player1rank"
+            android:layout_marginTop="10dp"
             android:text="Rank"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
+            android:background="#00000000"
             android:layout_column="0"
             android:layout_row="1"
-            android:background="#00000000"/>
+            android:id="@+id/player1rank"/>
 
-        <EditText
+        <TextView
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:id="@+id/player1name"
+            android:layout_marginTop="10dp"
             android:text="Name"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
+            android:background="#00000000"
             android:layout_column="1"
             android:layout_row="1"
-            android:background="#00000000"/>
+            android:id="@+id/player1name"/>
 
-        <EditText
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:id="@+id/player1score"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:id="@+id/player2rank"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:id="@+id/player2name"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:id="@+id/player2score"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:id="@+id/player3rank"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:id="@+id/player3name"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:id="@+id/player3score"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:id="@+id/player4rank"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:id="@+id/player4name"/>
+
+        <TextView
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:inputType="numberSigned"
             android:ems="5"
-            android:id="@+id/player1score"
             android:text="Score"
             android:textColor="#FFFFFF"
-            android:layout_row="1"
-            android:layout_column="2"
             android:textSize="30dp"
-            android:background="#00000000"/>
+            android:background="#00000000"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:id="@+id/player4score"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Rank"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:id="@+id/player5rank"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:id="@+id/player5name"/>
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="5"
+            android:text="Score"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:background="#00000000"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:id="@+id/player5score"/>
 
     </GridLayout>
     <View
         android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="-346dp"
-        android:background="#0c0c0c"/>
+        android:layout_height="5dp"
+        android:layout_marginTop="-360dp"
+        android:background="#1a1a1a"/>
 
 </LinearLayout>
