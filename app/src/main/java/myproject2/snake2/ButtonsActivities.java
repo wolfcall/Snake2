@@ -14,13 +14,11 @@ public class ButtonsActivities extends Activity{
     protected void onCreate(Bundle button){
         super.onCreate(button);
 
-        setContentView(R.layout.activity_main);
-
         final Button game = (Button) findViewById(R.id.btnStart);
         game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.w("Status", "game button clicked");
+                Log.d("Status", "game button clicked");
             }
         });
     }
